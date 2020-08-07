@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -22,7 +22,12 @@
         <div class="container">
             <div class="row justify-content-between mb-5">
                 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                    <a class="navbar-brand" href="index.html">BODEGUITA FLORES EIRL</a>
+                    <figure class="header-logo">
+                        <img 
+                            src="https://drive.google.com/uc?export=view&id=1okBO5At9LILb-gJdKnFwT1nhJ0jLEXaV" 
+                            alt="hero-logo.png"                        >
+                    </figure>
+                    <a class="navbar-brand" href="index.html">D’MARIA CHICHARRONES</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -140,5 +145,78 @@
 
 
 </body>
+
+   
+<section id="contact" class="contact">
+    <form action="" class="email">
+        <label for="email">Haz tu pedido</label>
+        <!-- <input type="text" placeholder="Déjame tu e-mail" id="email"> -->
+        <button>
+            <a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
+                PEDIR
+            </a>
+        </button>
+    </form>
+    <div class="social">
+        <!-- <a href="" class="social-link linkedin"></a> -->
+        <a href="https://www.instagram.com/chicharronesdmaria/" class="social-link instagram"></a>
+        <a href="https://www.facebook.com/chicharronesdmaria" class="social-link facebook"></a>
+        <!-- <a href="" class="social-link github"></a> -->
+    </div>
+</section>
+    
+    
+
+
+
+<footer class="footer">
+		
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
+        <img src="img/whatsapp.png" alt="Whatsapp">
+    
+    </a>
+    
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v7.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="2051224058264141">
+    </div>
+    
+    <div class="footer-message0">
+        <p>
+            dmariachicharrones.com
+        </p>
+    </div>
+    <div class="footer-image">
+        <figure class="footer-logo">
+            <img 
+                src="https://drive.google.com/uc?export=view&id=12bmCfTdPtNL3a-KlEbGZnaQ2LrzHJ4Uz"
+                alt="logo-linkarox-bi.svg"
+            >
+        </figure>
+        <div class="footer-message">
+            <p>Desarrollado con <img src="https://drive.google.com/uc?export=view&id=10xOKwS3QQM08SWMdLz4PRqupaRgtTLuq" alt="heart.svg"> por <a href=><strong>linkarox</strong></a>&#8482</p>
+        </div>
+    </div>
+</footer>
+
 
 </html>
