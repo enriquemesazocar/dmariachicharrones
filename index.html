@@ -1,84 +1,109 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>D'María Chicharrones</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	
-	<body>
-		<header class="header">
-			<figure class="header-logo">
-				<img 
-					src="https://drive.google.com/uc?export=view&id=1okBO5At9LILb-gJdKnFwT1nhJ0jLEXaV" 
-					alt="hero-logo.png"
-				>
-				<p class="header-title">¡Bienvenidos a D’María Chicharrones!</p>
-			</figure>
+<html lang="en">
 
-			<nav class="header-menu">
-				<ul>
-					<li>
-						<a href="#carte"></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <title>D'María Chicharrones</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            
+            <div class="row align-items-stretch justify-content-between">
+                <a class="navbar-brand" href="#">D’MARIA CHICHARRONES</a>
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <figure class="header-logo">
+                        <img 
+                            src="https://drive.google.com/uc?export=view&id=1okBO5At9LILb-gJdKnFwT1nhJ0jLEXaV" 
+                            alt="hero-logo.png"
+                        >
+                      
+                    </figure>
+                    <a class="navbar-brand" href="#">D’MARIA CHICHARRONES</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        
+                        <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
-                                <img src="image/shopping-cart.png" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
                                     width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="true"></img>
-                                
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
                             </li>
-                        
+                        </ul>
                     </div>
-					</li>
+                    <li>
+						<a href="#lista-productos " class="header-menu" >Combos</a>
+                    </li>
+                    
 					<li>
-						<a href="#delivery">Delivery</a>
+						<a href="#contact" class="header-menu">Contáctanos</a>
 					</li>
-					<li>
-						<a href="#contact">Contáctanos</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-		<header>
-			
-		</header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1 ><strong>D’MARIA CHICHARRONES</strong></h1>
+            <p class="hero-description">
+                D'María Chicharrones nace con el propósito de poder mostrar a la comunidad el agradable sabor de la carne de cerdo convertido en el  tradicional “chicharrón”, el exquisito jamón del país, entre otros; el cual puede ir acompañado de diversos complementos. 
+              
+            </p>
+            <p> La preparación de la carne de cerdo es a base de diversos procesos de cocción con hierbas frescas y finos condimentos, es por ello que nos  esforzamos a diario para ofrecer lo mejor para la mesa de sus hogares.
+            Los invitamos a que se dejen envolver por estos deliciosos sabores y deleiten su paladar, buen provecho.
+        </p>
+        </div>
+    </section>
 
+    <section id="news" class="news">
+        <h2 class="info-title">Información</h2>
 
+        <article class="info">
+            <div class="info-text">
+                <h3 class="info-title">CoVid-19</h3>
+                <h4>Protocolo</h4>
+                <p class="info-description">
+                    Así nos cuidamos y te cuidamos.
+                </p>
+                <p class="info-link"><a href="">Más información</a></p>
+            </div>
+            <figure class="info-image">
+                <img 
+                    src="https://drive.google.com/uc?export=view&id=1KMo6O3WIRhgW_eWC48OeuOchS0mDzosh" 
+                    alt="info-certificado-01.png"
+                >
+            </figure>
+        </article>
 
-
-		<section class="hero">
-			<div class="hero-text">
-				<h1 ><strong>D’MARIA CHICHARRONES</strong></h1>
-				<p class="hero-description">
-					D'María Chicharrones nace con el propósito de poder mostrar a la comunidad el agradable sabor de la carne de cerdo convertido en el  tradicional “chicharrón”, el exquisito jamón del país, entre otros; el cual puede ir acompañado de diversos complementos. 
-					La preparación de la carne de cerdo es a base de diversos procesos de cocción con hierbas frescas y finos condimentos, es por ello que nos  esforzamos a diario para ofrecer lo mejor para la mesa de sus hogares.
-					Los invitamos a que se dejen envolver por estos deliciosos sabores y deleiten su paladar, buen provecho.
-				</p>
-			</div>
-		</section>
-
-		<section id="news" class="news">
-			<h2 class="info-title">Información</h2>
-
-			<article class="info">
-				<div class="info-text">
-					<h3 class="info-title">CoVid-19</h3>
-					<h4>Protocolo</h4>
-					<p class="info-description">
-						Así nos cuidamos y te cuidamos.
-					</p>
-					<p class="info-link"><a href="">Más información</a></p>
-				</div>
-				<figure class="info-image">
-					<img 
-						src="https://drive.google.com/uc?export=view&id=1KMo6O3WIRhgW_eWC48OeuOchS0mDzosh" 
-						alt="info-certificado-01.png"
-					>
-				</figure>
-			</article>
-
-			<!-- <article class="info">
+        <!-- <article class="info">
 				<div class="info-text">
 					<h3 class="info-title">CoVid-19</h3>
 					<h4>Protocolo</h4>
@@ -110,359 +135,348 @@
 						alt="info-certificado-01.png"
 					>
 				</figure>
-			</article> -->
+            </article> -->
+        </section>
 
-		</section>
 
-		<section id="carte" class="carte">
-			<h2 class="carte-title">La carta</h2>
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">La Carta</h1>
+        </div>
 
-			<div class="plate-container">
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-							src="https://drive.google.com/uc?export=view&id=1T5lgh4TTRnAPbsyNYP1-jsjS6LFYzLux" 
-							alt="backgound_pm.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Combo para 1</h3>
-						<h4 class="plate-subtitle">Chicharrón personal</h4>
-						<div class="plate-description">
-							<ul>
-								<li>Tamal</li>
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Combo para 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=1T5lgh4TTRnAPbsyNYP1-jsjS6LFYzLux" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">22</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <strong>Chicharrón personal</strong>
+                            <li>Tamal</li>
 								<li>Camote</li>
 								<li>Relleno</li>
 								<li>1 Café</li>
-								<li>2 panes solos</li>
-							</ul>
-						</div>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 22.00
-							</a>
-						</p>
-					</div>
-				</article>
-	
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-						src="https://drive.google.com/uc?export=view&id=1FD4MklfSY7_JblynhOl9kj_5QucOx0iM" 
-							alt="backgound_di.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Combo para 2</h3>
-						<h4 class="plate-subtitle">1/4 Kg Chicharrón</h4>
-						<div class="plate-description">
-							<ul>
-								<li>Tamal</li>
+                                <li>2 panes solos</li>
+                                &nbsp
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Combo para 2</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=1FD4MklfSY7_JblynhOl9kj_5QucOx0iM" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">39</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <strong>1/4 Kg Chicharrón</strong>
+                            <li>Tamal</li>
 								<li>Camote</li>
 								<li>Salchicha huachana</li>
 								<li>2 Cafés</li>
-								<li>4 panes solos</li>
-							</ul>
-						</div>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 39.00
-							</a>
-						</p>
-					</div>
-				</article>
-	
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-						src="https://drive.google.com/uc?export=view&id=1g376DUer5gLnSpG61IN1hOgB15Y1_KBR"
-							alt="backgound_dev.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Combo familiar</h3>
-						<h4 class="plate-subtitle">1/2 Kg Chicharrón</h4>
-						<div class="plate-description">
-							<ul>
-								<li>3 Tamales</li>
-								<li>Camote frito</li>
-								<li>Salchicha huachana</li>
-								<li>Relleno</li>
-								<li>4 Cafés</li>
-								<li>4 Panes solos</li>
-							</ul>
-						</div>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 69.00
-							</a>
-						</p>
-					</div>
-				</article>
+                                <li>4 panes solos</li>
+                                <p> &nbsp</p>
+                            
 
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-							src="https://drive.google.com/uc?export=view&id=1gNyn70v0dEdYNvYSp3fzBqzIFs3YP-74"
-							alt="backgound_dev.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Caldo de Gallina</h3>
-						<h4 class="plate-subtitle">Contundente</h4>
-						<p class="plate-description">
-							Poderosa sopa nutritiva acompañada con carne de gallina.
-						</p>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 9.00
-							</a>
-						</p>
-					</div>
-				</article>
+                                
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
 
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-							src="https://drive.google.com/uc?export=view&id=15ek3Qs3ldc5SUdTzX-ctLFwP-dVwCXJQ"
-							alt="backgound_dev.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Caldo de Mote</h3>
-						<h4 class="plate-subtitle">Contundente</h4>
-						<p class="plate-description">
-							Contundente caldo acompañado de carne de res y mondongo.
-						</p>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 9.00
-							</a>
-						</p>
-					</div>
-				</article>
-			</div>
-			<h2 class="carte-title">Postres</h2>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Familiar</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=1g376DUer5gLnSpG61IN1hOgB15Y1_KBR" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">69</span></h1>
 
-			<div class="plate-container">
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-							src="https://drive.google.com/uc?export=view&id=1pWnxOstH-CbF66VnwzBHVSJex4TTs4w0"
-							alt="backgound_dev.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Pie de Limón</h3>
-						<h4 class="plate-subtitle">Delicioso</h4>
-						<p class="plate-description">
-							Una tarta formada por una base de masa quebrada u hojaldre que se rellena con crema de limón.
-						</p>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 5.00
-							</a>
-						</p>
-					</div>
-				</article>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <strong>1/2 Kg Chicharrón</strong>
+                            <li>3 Tamales</li>
+                            <li>Camote frito</li>
+                            <li>Salchicha huachana</li>
+                            <li>Relleno</li>
+                            <li>4 Cafés</li>
+                            <li>4 Panes solos</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
 
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-							src="https://drive.google.com/uc?export=view&id=1Mq6_mzddSAe9RGE0P1v8RE9_f-GxApkF"
-							alt="backgound_dev.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Tres leches</h3>
-						<h4 class="plate-subtitle">Sabroso</h4>
-						<p class="plate-description">
-							Un postre típico de toda latinoamérica.
-							Es un bizcocho bañado con tres tipos de leche: leche evaporada, crema de leche y leche condensada
-						</p>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 5.00
-							</a>
-						</p>
-					</div>
-				</article>
+            </div>
 
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-							src="https://drive.google.com/uc?export=view&id=1lkOn5ueakZmGCAk6ObU95ApXk3Q_mki6"
-							alt="backgound_dev.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Torta de chocolate</h3>
-						<h4 class="plate-subtitle">Divina</h4>
-						<p class="plate-description">
-							No requiere presentación, este postre divino se sirve desde el siglo XIX.
-							Su principal ingrediente: el cacao.
-						</p>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 5.00
-							</a>
-						</p>
-					</div>
-				</article>
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Caldo de Gallina</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=1gNyn70v0dEdYNvYSp3fzBqzIFs3YP-74" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">9</span></h1>
 
-				<article class="plate">
-					<figure class="plate-image">
-						<img 
-							src="https://drive.google.com/uc?export=view&id=12WMfstoG9MVb0HZdOaTSzCmm8KJUMeJH"
-							alt="backgound_dev.png"
-						>
-					</figure>
-					<div class="plate-text">
-						<h3 class="plate-title">Pie de Fresa</h3>
-						<h4 class="plate-subtitle">Exquisito</h4>
-						<p class="plate-description">
-							Una deliciosa tarta cubierta de fresas frescas.
-						</p>
-						<p class="plate-price">
-							<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-								S/. 5.00
-							</a>
-						</p>
-					</div>
-				</article>
-			</div>
-		</section>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Poderosa sopa nutritiva acompañada con carne de gallina.</li>
+                            
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
 
-		<section id="about" class="about">
-			<h2 class="about-title">Más sobre nosotros</h2>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Caldo de Mote</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=15ek3Qs3ldc5SUdTzX-ctLFwP-dVwCXJQ" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">9</span></h1>
 
-			<article class="post">
-				<div class="post-text">
-					<h2 class="post-title">Ubicación</h3>
-					<p class="post-description">
-						Aquí estamos; pero por seguridad aún no puedes visitarnos.
-						Mientras tanto aprobacha nuestras ofertas y servicio de delivery.
-					</p>
-				</div>
-				<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-					<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-					<script>
-						(function () {
-							var setting = {"height":300,"width":400,"zoom":20,"queryString":"D'Maria Chicharrones, Santa Mercedes, Lima District, Peru","place_id":"ChIJrW1Np3PPBZERa_TZuNtSX3w","satellite":false,"centerCoord":[-12.01895875338097,-77.06117574999999],"cid":"0x7c5f52dbb8d9f46b","lang":"en","cityUrl":"/peru/lima","cityAnchorText":"Map of Lima, Provincia de Lima, Peru","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"210732"};
-							var d = document;
-							var s = d.createElement('script');
-							s.src = 'https://1map.com/js/script-for-user.js?embed_id=210732';
-							s.async = true;
-							s.onload = function (e) {
-								window.OneMap.initMap(setting)
-							};
-							var to = d.getElementsByTagName('script')[0];
-							to.parentNode.insertBefore(s, to);
-					  	})();
-					  </script>
-					  <a href="https://1map.com/map-embed">1 Map</a>
-				</div>
-				<!-- <figure class="post-image">
-					<img 
-					src="https://drive.google.com/uc?export=view&id=1noZ8U1pm1xqwD1oCBa_m8S2OBnFoHkVo"
-						alt="overview_post.png"
-					>
-				</figure> -->
-			</article>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Contundente caldo acompañado de carne de res y mondongo</li>
+                            <p> &nbsp</p>
+                            
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
 
-			<article class="post">
-				<div class="post-text">
-					<h2 class="post-title">Nuestros clientes opinan</h3>
-						<div class="post-description">
-							Estas son las opiniones de algunos de nuestros clientes:
-						</div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pie de Limon</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=1pWnxOstH-CbF66VnwzBHVSJex4TTs4w0" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">5</span></h1>
 
-				</div>
-				<figure class="post-image">
-					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjhonatanaly.neyracastilla%2Fposts%2F10213680141699566&width=500" width="400" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjuancarlos.rioslizza%2Fposts%2F10221125451264118&width=500" width="400" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-							
-				</figure>
-				<!-- <figure class="post-image">
-					<img 
-						src = "https://drive.google.com/uc?export=view&id=1noZ8U1pm1xqwD1oCBa_m8S2OBnFoHkVo"
-						alt = "overview_post.png"
-					>
-				</figure> -->
-			</article>
-			
-		</section>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>							Una tarta formada por una base de masa quebrada u hojaldre que se rellena con crema de limón.                            </li>
+                            
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
 
-		<section id="contact" class="contact">
-			<form action="" class="email">
-				<label for="email">Haz tu pedido</label>
-				<!-- <input type="text" placeholder="Déjame tu e-mail" id="email"> -->
-				<button>
-					<a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-						PEDIR
-					</a>
-				</button>
-			</form>
-			<div class="social">
-				<!-- <a href="" class="social-link linkedin"></a> -->
-				<a href="https://www.instagram.com/chicharronesdmaria/" class="social-link instagram"></a>
-				<a href="https://www.facebook.com/chicharronesdmaria" class="social-link facebook"></a>
-				<!-- <a href="" class="social-link github"></a> -->
-			</div>
-		</section>
-	
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tres leches</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=1Mq6_mzddSAe9RGE0P1v8RE9_f-GxApkF" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">5</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Un postre típico de toda latinoamérica.
+                                Es un bizcocho bañado con tres tipos de leche: leche evaporada, crema de leche y leche condensada</li>
+                            
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Torta chocolate</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=1lkOn5ueakZmGCAk6ObU95ApXk3Q_mki6" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">5</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>No requiere presentación, este postre divino se sirve desde el siglo XIX.
+                                Su principal ingrediente: el cacao.</li>
+                           
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pie de Fresa</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://drive.google.com/uc?export=view&id=12WMfstoG9MVb0HZdOaTSzCmm8KJUMeJH" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">5</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <p> &nbsp</p>
+                            <li>Una deliciosa tarta cubierta de fresas frescas.</li>
+                            <p> &nbsp</p>
+                            <p> &nbsp</p>
+                           
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
 
 
-		<footer class="footer">
-			
-			<a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
-				<img src="image/whatsapp.png" alt="Whatsapp">
-			
-			</a>
-			
-			
+        </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+    <section id="about" class="about">
+        <h2 class="about-title">Más sobre nosotros</h2>
+    
+        <article class="post">
+            <div class="post-text">
+                <h2 class="post-title">Ubicación</h3>
+                <p class="post-description">
+                    Aquí estamos; pero por seguridad aún no puedes visitarnos.
+                    Mientras tanto aprovecha nuestras ofertas y servicio de delivery.
+                </p>
+            </div>
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <script>
+                    (function () {
+                        var setting = {"height":300,"width":400,"zoom":20,"queryString":"D'Maria Chicharrones, Santa Mercedes, Lima District, Peru","place_id":"ChIJrW1Np3PPBZERa_TZuNtSX3w","satellite":false,"centerCoord":[-12.01895875338097,-77.06117574999999],"cid":"0x7c5f52dbb8d9f46b","lang":"en","cityUrl":"/peru/lima","cityAnchorText":"Map of Lima, Provincia de Lima, Peru","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"210732"};
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=210732';
+                        s.async = true;
+                        s.onload = function (e) {
+                            window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                      })();
+                  </script>
+                  <a href="https://1map.com/map-embed">1 Map</a>
+            </div>
+            <!-- <figure class="post-image">
+                <img 
+                src="https://drive.google.com/uc?export=view&id=1noZ8U1pm1xqwD1oCBa_m8S2OBnFoHkVo"
+                    alt="overview_post.png"
+                >
+            </figure> -->
+        </article>
+    
+        <article class="post">
+            <div class="post-text">
+                <h3 class="post-title">Nuestros clientes opinan</h3>
+                    <div class="post-description">
+                    <br>    
+                    Estas son las opiniones de algunos de nuestros clientes:
+                    </div>
+    
+            </div>
+            <figure class="post-image">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjhonatanaly.neyracastilla%2Fposts%2F10213680141699566&width=400" width="400" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjuancarlos.rioslizza%2Fposts%2F10221125451264118&width=400" width="400" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        
+            </figure>
+            <!-- <figure class="post-image">
+                <img 
+                    src = "https://drive.google.com/uc?export=view&id=1noZ8U1pm1xqwD1oCBa_m8S2OBnFoHkVo"
+                    alt = "overview_post.png"
+                >
+            </figure> -->
+        </article>
+        
+    </section>
+    
+</body>
+
+   
+    
+    
+<section id="contact" class="contact">
+    <form action="" class="email">
+        <label for="email">Haz tu pedido</label>
+        <!-- <input type="text" placeholder="Déjame tu e-mail" id="email"> -->
+        <button>
+            <a href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
+                PEDIR
+            </a>
+        </button>
+    </form>
+    <div class="social">
+        <!-- <a href="" class="social-link linkedin"></a> -->
+        <a href="https://www.instagram.com/chicharronesdmaria/" class="social-link instagram"></a>
+        <a href="https://www.facebook.com/chicharronesdmaria" class="social-link facebook"></a>
+        <!-- <a href="" class="social-link github"></a> -->
+    </div>
+</section>
+    
+    
 
 
-			<!-- Load Facebook SDK for JavaScript -->
-			<div id="fb-root"></div>
-			<script>
-			  window.fbAsyncInit = function() {
-				FB.init({
-				  xfbml            : true,
-				  version          : 'v7.0'
-				});
-			  };
-	  
-			  (function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-	  
-			<!-- Your Chat Plugin code -->
-			<div class="fb-customerchat"
-			  attribution=setup_tool
-			  page_id="2051224058264141">
-			</div>
-			
-			<div class="footer-message0">
-				<p>
-					dmariachicharrones.com
-				</p>
-			</div>
-			<div class="footer-image">
-				<figure class="footer-logo">
-					<img 
-						src="https://drive.google.com/uc?export=view&id=12bmCfTdPtNL3a-KlEbGZnaQ2LrzHJ4Uz"
-						alt="logo-linkarox-bi.svg"
-					>
-				</figure>
-				<div class="footer-message">
-					<p>Desarrollado con <img src="https://drive.google.com/uc?export=view&id=10xOKwS3QQM08SWMdLz4PRqupaRgtTLuq" alt="heart.svg"> por <a href=><strong>linkarox</strong></a>&#8482</p>
-				</div>
-			</div>
-		</footer>				
-	
-</html>
+
+<footer class="footer">
+		
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945587870&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20delivery">
+        <img src="img/whatsapp.png" alt="Whatsapp">
+    
+    </a>
+    
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v7.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="2051224058264141">
+    </div>
+    
+    <div class="footer-message0">
+        <p>
+            dmariachicharrones.com
+        </p>
+    </div>
+    <div class="footer-image">
+        <figure class="footer-logo">
+            <img 
+                src="https://drive.google.com/uc?export=view&id=12bmCfTdPtNL3a-KlEbGZnaQ2LrzHJ4Uz"
+                alt="logo-linkarox-bi.svg"
+            >
+        </figure>
+        <div class="footer-message">
+            <p>Desarrollado con <img src="https://drive.google.com/uc?export=view&id=10xOKwS3QQM08SWMdLz4PRqupaRgtTLuq" alt="heart.svg"> por <a href=><strong>linkarox</strong></a>&#8482</p>
+        </div>
+    </div>
+</footer>	
